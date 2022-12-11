@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+#Project summary
+
+This project is my portfolio and it's going to be developed trough time.
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
