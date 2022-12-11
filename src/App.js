@@ -1,29 +1,30 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import { Router, Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
 import AboutMe from './components/AboutMe';
+import Projects from './components/Projects';
+import { Router, Routes, Route } from 'react-router-dom';
 
 
 function App() {
+  let Component
+  switch (window.location.pathname){
+    case "/":
+      Component = Home
+      break
+      case "/projects":
+      Component = Projects
+      break
+      case "/aboutme":
+        Component = AboutMe
+        break
+  }
   return (
     <>
       <Navbar />
       <div className='App'>
-
-      {/*<Router>
-        <Routes>
-        <Route path='/' exact />
-        
-        </Routes>
-      </Router>*/}
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <AboutMe />
+     
+      <Component />
       </div>
     </>
   );

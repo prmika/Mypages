@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { FaBeer } from 'react-icons/fa';
 import './Navbar.css'
 
 function Navbar() {
@@ -11,40 +12,20 @@ function Navbar() {
         <>
             <nav className='navbar'>
                 <div className='navbar-container'>
-                    {/*<Link to="/services" className='navbar-logo'>
-                        LOGO
-                    </Link>*/}
-                    LOGO
+                    <a href="/" className='logo'>LOGO</a>
 
                     <div className='menu-icon'>
-                        <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+                        <FaBeer className={click ? 'fas fa-times' : 'fas fa-bars'} />
                     </div>
 
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                        <br />
-                        <br />
                         <li className='nav-item'>
-                            {/*<Link to ='/projects' className='nav-links' onClick={closeMobileMenu}>
-                                Home
-                            </Link>*/}
-                            Projects
+                            <a href='/projects'>Projects</a>
                         </li>
-                        <br />
-                        <br />
                         <li className='nav-item'>
-                            {/*<Link to ='/aboutme' className='nav-links-mobile' onClick={closeMobileMenu}>
-                                Home
-                            </Link>*/}
-                            AboutMe
+                            <a href='/aboutme'>AboutMe</a>
                         </li>
-                        <br />
-                        <br />
-                        <li className='nav-item'>
-                            {/*<Link to ='/something' className='nav-links-mobile' onClick={closeMobileMenu}>
-                                Home
-                            </Link>*/}
-                            Something
-                        </li>
+
                     </ul>
                 </div>
             </nav>
