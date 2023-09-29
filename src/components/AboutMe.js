@@ -16,9 +16,9 @@ function AboutMe() {
                 <img src="./logo512.png" alt=""/>
                 </div>
                 <div className='AboutMe-text'>
-                   <h1>In this section tell something about youssssssssssssssssssssssssssssssssssssssssss</h1> 
+                   <h1>In this section tell something about you</h1> 
                    <p>
-                    plaplaplaplaplaplaplaplplaplaplaplaplaplapla
+                    Pitäis vissiin opetella vähän reactia että vois joskus tehfä tämmöstä
                    </p>
                 </div>
 
