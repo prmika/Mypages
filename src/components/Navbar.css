@@ -1,0 +1,23 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.navbar button {
+  color: black;
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.navbar button:hover {
+  text-decoration: underline;
+}

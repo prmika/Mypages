@@ -1,0 +1,12 @@
+.container {
+  height: 400vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  transition: transform 1.5s ease-in-out;
+  transition-delay: 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+
