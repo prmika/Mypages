@@ -8,6 +8,7 @@ const Navbar = ({ handleNavClick }) => {
       <button onClick={() => handleNavClick(1)}>Projects</button>
       <button onClick={() => handleNavClick(2)}>Something</button>
       <button onClick={() => handleNavClick(3)}>Something else</button>
+      <button onClick={() => handleNavClick(4)}>Contact</button>
     </nav>
   );
 };

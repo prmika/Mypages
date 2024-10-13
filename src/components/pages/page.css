@@ -32,10 +32,9 @@
   height: 50vh;
   border: none;
   color: white;
-  font-size: 48px;
   padding: 10px;
   cursor: pointer;
-  pointer-events: all; /* Enable pointer events for buttons */
+  pointer-events: all;
   transition: background-color 0.3s ease;
   display: flex;
   align-items: center;
@@ -60,16 +59,4 @@
   overflow-x: hidden;
   scroll-behavior: smooth;
   width: 100%;
-}
-
-#aboutMe {
-  background-color: #f8b6001e;
-}
-
-#projects {
-  background-color: #34ace041;
-}
-
-#something {
-  background-color: #ff4e512c;
 }

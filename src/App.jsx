@@ -10,10 +10,13 @@ function App() {
   };
 
   return (
-    <div>
+    <>
       <Navbar handleNavClick={changeCurrentSection} />
-      <PageContainer changeSection={changeCurrentSection} currentSection={currentSection} />
-    </div>
+      <PageContainer
+        changeSection={changeCurrentSection}
+        currentSection={currentSection}
+      />
+    </>
   );
 }
 

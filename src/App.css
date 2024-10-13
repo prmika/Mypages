@@ -4,6 +4,8 @@ html {
   padding: 0;
   height: 100%;
   overflow: hidden;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
+  color: white;
 }
+

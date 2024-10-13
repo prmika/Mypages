@@ -1,8 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import "./PageContainer.css";
-import AboutMe from "./pages/AboutMe";
-import Projects from "./pages/Projects";
-import Something from "./pages/Something";
+import Page from "./pages/Page";
 import FloatingBalls from "./FloatingBalls";
 import PageContent from "./PageContent";
 
@@ -20,7 +18,11 @@ const PageContainer = ({ changeSection, currentSection }) => {
 
       if (event.deltaY > 0 && currentSection < totalSections - 1) {
         changeSection(currentSection + 1);
-      } else if (event.deltaY < 0 && currentSection > 0) {
+      } else if (
+        event.deltaY < 0 &&
+        currentSection > 0 &&
+        currentSection <= totalSections - 1
+      ) {
         changeSection(currentSection - 1);
       }
     },
@@ -48,14 +50,32 @@ const PageContainer = ({ changeSection, currentSection }) => {
       onWheel={handleScroll}
     >
       <FloatingBalls />
-      <AboutMe />
-      <Projects>
+      <Page title="About me">
+        <PageContent>
+          <p>Hi, I'm a software engineer </p>
+        </PageContent>
+      </Page>
+      <Page title="Projects">
+        <PageContent>
+          <p>
+            This is content use arrows to go to the next content asd
+            asdasdasdasdasd asdasdasdasdasdsa sadas
+          </p>
+        </PageContent>
         <PageContent />
         <PageContent />
-        <PageContent />
-      </Projects>
-      <Something />
-      <Something />
+      </Page>
+      <Page title="Something" />
+      <Page title="Something else" />
+      <Page title="Contact">
+        <PageContent>
+          <div>You Can contact me by email or phone</div>
+          <input type="email" placeholder="Email" />
+          <input type="tel" placeholder="Phone" />
+          <input type="Text" placeholder="Message" />
+          <button>Send</button>          
+        </PageContent>
+      </Page>
     </div>
   );
 };
